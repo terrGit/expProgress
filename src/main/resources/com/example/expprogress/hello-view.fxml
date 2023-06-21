@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.expprogress.HelloController">
+   <children>
+      <TableView fx:id="table" layoutY="60.0" prefHeight="420.0" prefWidth="804.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id_history" />
+          <TableColumn fx:id="col_waktu" prefWidth="216.7999496459961" text="waktu" />
+            <TableColumn fx:id="col_deskripsi" prefWidth="375.1999816894531" text="deskripsi" />
+            <TableColumn fx:id="col_nota" minWidth="0.0" prefWidth="63.2000732421875" text="nota_id" />
+            <TableColumn fx:id="col_jasa" prefWidth="76.0" text="jasa_id" />
+        </columns>
+      </TableView>
+      <TextField fx:id="t_id" layoutX="98.0" layoutY="491.0" />
+      <TextField fx:id="t_nota" layoutX="98.0" layoutY="530.0" />
+      <TextField fx:id="t_jasa" layoutX="98.0" layoutY="569.0" />
+      <TextField fx:id="t_deskripsi" layoutX="306.0" layoutY="518.0" prefHeight="77.0" prefWidth="406.0" />
+      <Text layoutX="19.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID_HISTORY  :" />
+      <Text layoutX="20.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTA_ID      :" />
+      <Text layoutX="20.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JASA_ID        :" />
+      <Text layoutX="304.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESKRIPSI  :" />
+      <Button layoutX="727.0" layoutY="518.0" mnemonicParsing="false" onAction="#insertBtn" prefHeight="26.0" prefWidth="60.0" text="INSERT" />
+      <Button layoutX="727.0" layoutY="556.0" mnemonicParsing="false" onAction="#update" text="UPDATE" />
+   </children>
+</AnchorPane>
